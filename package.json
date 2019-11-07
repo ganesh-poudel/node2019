@@ -4,7 +4,8 @@
   "description": "learning node by creating an express server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -13,10 +14,8 @@
   "keywords": [
     "express",
     "node",
-    "npm",
-    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D",
-    "\u001b[C\u001b[C\u001b[C\u001b[C",
-    "\u001b[C\u001b[C\u001b[C"
+    "npm"
+   
   ],
   "author": "Ganesh Poudel",
   "license": "GPL-3.0",
