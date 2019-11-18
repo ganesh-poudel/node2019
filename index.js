@@ -22,6 +22,20 @@ app.get('/zoo', async (req, res) => {
 
 });
 
+app.get('/animal',async(req,res) =>{
+    console.log(req);
+    //res.send(`query prams? ${req.query}`);
+    try{
+        const [results] = await connection.query(
+            'SELECT * FROM animal WHERE name LIKE ?',
+            [req.query.name]
+        );
+        res.json(results);
+    }catch (e){
+        res.send(`db error ${e}`);
+    }
+})
+
 app.get('/', (req, res) => {
     res.send('Hello from my node server');
 });
