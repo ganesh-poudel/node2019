@@ -29,7 +29,7 @@ exports.search = async (name) => {
 exports.insert = async (name, dob) => {
     try {
         const [results] = await connection.query(
-            'INSERT INTO animal (name, dob) VALUES (?, ?)',
+            'INSERT INTO animal (name, date_of_birth) VALUES (?, ?)',
             [name, dob]); 
         return results;
     } catch (e) {
