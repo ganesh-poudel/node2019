@@ -1,6 +1,13 @@
 'use strict';
 
 const express = require('express');
+const animal = require('./model/animal');
+/* const https =require('http');
+const fs = require('fs');
+
+const options = {
+    key: fs.readFile('../ca')
+} */
 
 
 const app = express()
